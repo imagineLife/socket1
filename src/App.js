@@ -33,6 +33,11 @@ class App extends React.Component{
 		return(
 			<div>
 				<h1>Hello Socket!</h1>
+				<input 
+					type="text" 
+					placeholder="enter a message..."
+					onKeyUp={this.handleSubmit} 
+				/>
 				{messages}
 			</div>
 			)
